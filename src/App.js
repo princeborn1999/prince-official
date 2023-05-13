@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Skill } from "./components/Skill";
 import { Experience } from "./components/Experience";
@@ -9,19 +9,17 @@ import { More } from "./components/More";
 import { NotFound } from "./components/NotFound";
 function App() {
   return (
-    <div>
+    <Router>
       <Header></Header>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/skill" component={Skill} />
-          <Route exact path="/experience" component={Experience} />
-          <Route exact path="/interest" component={Interest} />
-          <Route exact path="/more" component={More} />
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/skill" element={<Skill />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/interest" element={<Interest />} />
+        <Route path="/more" element={<More />} />
+        <Route component={NotFound} />
+      </Routes>
+    </Router>
   );
 }
 

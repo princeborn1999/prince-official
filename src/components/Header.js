@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import { Button } from "@mui/material";
-
 function Header() {
   return (
-    <header>
-      <div className="flex">
+    <header className="flex">
+      <div className="flex shadow-md">
         <Link to="/">
           <Button>HOME</Button>
         </Link>

@@ -9,12 +9,18 @@ export function Home() {
         </div>
       </section>
       <section id="section-left" className="col-span-2 p-5 pr-10">
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
-          <p>Portfolio Picture</p>
+        <div className="bg-gradient-to-r p-5 rounded-lg bg-slate-400">
+          <img
+            src="../assets/img/profile-picture2.jpg"
+            alt="portfolio_picture"
+          />
           <p>This is Aaron Prince!</p>
           <p>Born in 1999</p>
           <p>2022 Graduated at NCNU</p>
           <p>Computer Scientist Degree</p>
+          <p>Skill: React</p>
+          <p> Angular </p>
+          <p>Node</p>
           <section>
             <p>Link to my github: ""</p>
             <p>Link to my CV: ""</p>

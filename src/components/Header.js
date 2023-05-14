@@ -13,9 +13,6 @@ function Header() {
           <Link to="/">
             <Button>HOME</Button>
           </Link>
-          <Link to="/skill">
-            <Button>SKILL</Button>
-          </Link>
           <Link to="/experience">
             <Button>EXPERIENCE</Button>
           </Link>

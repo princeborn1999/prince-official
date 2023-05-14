@@ -13,14 +13,16 @@ function App() {
     <div className="h-screen">
       <Router>
         <Header></Header>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/interest" element={<Interest />} />
-          <Route path="/more" element={<More />} />
-          <Route component={NotFound} />
-        </Routes>
+        <main className="p-5">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/skill" element={<Skill />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/interest" element={<Interest />} />
+            <Route path="/more" element={<More />} />
+            <Route component={NotFound} />
+          </Routes>
+        </main>
         <Footer></Footer>
       </Router>
     </div>

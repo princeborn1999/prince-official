@@ -1,10 +1,14 @@
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+
 export function Interest() {
   return (
-    <div>
-      <p>Manga!</p>
-      <p>Body Builder!</p>
-      <p>Open Source!</p>
-      Interest
-    </div>
+    <Tabs>
+      <Tab label="Body Builder"></Tab>
+      <Tab label="Open Source"></Tab>
+      <Tab label="Manga">
+        <div>Manga</div>
+      </Tab>
+    </Tabs>
   );
 }

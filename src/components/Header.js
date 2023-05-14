@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import FingerprintIcon from "@mui/icons-material/Fingerprint";
 function Header() {
   return (
-    <header className="flex">
-      <div className="flex shadow-md">
+    <header className="flex p-5">
+      <FingerprintIcon />
+      <div className="flex">
         <Link to="/">
           <Button>HOME</Button>
         </Link>

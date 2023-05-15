@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/prince-official/static/css/main.11aa5285.css",
+    "main.js": "/prince-official/static/js/main.484f50ca.js",
+    "static/js/787.a21709ee.chunk.js": "/prince-official/static/js/787.a21709ee.chunk.js",
+    "index.html": "/prince-official/index.html",
+    "main.11aa5285.css.map": "/prince-official/static/css/main.11aa5285.css.map",
+    "main.484f50ca.js.map": "/prince-official/static/js/main.484f50ca.js.map",
+    "787.a21709ee.chunk.js.map": "/prince-official/static/js/787.a21709ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11aa5285.css",
+    "static/js/main.484f50ca.js"
+  ]
+}

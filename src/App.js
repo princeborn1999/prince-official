@@ -7,6 +7,7 @@ import { Interest } from "./pages/Interest";
 import { More } from "./pages/More";
 import { NotFound } from "./pages/NotFound";
 import { Footer } from "./components/Footer";
+import { Skill } from "./pages/Skill";
 function App() {
   return (
     <div className="h-screen">
@@ -15,6 +16,7 @@ function App() {
         <main className="p-5">
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route path="/skill" element={<Skill />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/interest" element={<Interest />} />
             <Route path="/more" element={<More />} />

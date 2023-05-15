@@ -1,3 +1,4 @@
+import ProfilePicture from "../assets/img/profile-picture2.jpg";
 export function Home() {
   return (
     <div className="grid grid-cols-10">
@@ -11,7 +12,8 @@ export function Home() {
       <section id="section-left" className="col-span-2 p-5 pr-10">
         <div className="bg-gradient-to-r p-5 rounded-lg bg-slate-400">
           <img
-            src="../assets/img/profile-picture2.jpg"
+            className="rounded-full"
+            src={ProfilePicture}
             alt="portfolio_picture"
           />
           <p>This is Aaron Prince!</p>

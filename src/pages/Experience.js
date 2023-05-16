@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -6,6 +7,10 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 
 export function Experience() {
+  const [dotColor, setDotColor] = useState()
+  const handleDotClick = () => {
+    setDotColor(dotColor === 'primary' ? null : 'primary');
+  };
   return (
     <div>
       <section aria-label="work-experience">
@@ -15,14 +20,16 @@ export function Experience() {
         <Timeline position="alternate">
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
+              {dotColor && <TimelineDot color={dotColor} onClick={handleDotClick}/>}
+              {!dotColor && <TimelineDot onClick={handleDotClick}/>}
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>Systex 2022.12 Front-end Engineer</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
+              {dotColor && <TimelineDot color={dotColor} onClick={handleDotClick}/>}
+              {!dotColor && <TimelineDot onClick={handleDotClick}/>}
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
@@ -31,7 +38,8 @@ export function Experience() {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
+              {dotColor && <TimelineDot color={dotColor} onClick={handleDotClick}/>}
+              {!dotColor && <TimelineDot onClick={handleDotClick}/>}
             </TimelineSeparator>
             <TimelineContent>IntoStar 2022.5 Software Engineer</TimelineContent>
           </TimelineItem>

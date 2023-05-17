@@ -27,7 +27,6 @@ export function Interest() {
           </Box>
           <TabPanel value="1" className="flex justify-center">
             <section aria-label="body-tab">
-              Grid + videojs
               <img src={bodyImage} alt="" />
             </section>
           </TabPanel>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import rootReducer from "./reducers";
-import { Home } from "./pages/Home";
+import { Home } from "./pages/Home/Home";
 import { Experience } from "./pages/Experience";
 import { Interest } from "./pages/Interest";
 import { More } from "./pages/More";
@@ -25,7 +25,7 @@ function App() {
           <main>
             <Routes>
               <Route exact path="/" element={<Home />} />
-              <Route path="/work" element={<Work />} />
+              {/* <Route path="/work" element={<Work />} /> */}
               <Route path="/experience" element={<Experience />} />
               <Route path="/interest" element={<Interest />} />
               <Route path="/more" element={<More />} />

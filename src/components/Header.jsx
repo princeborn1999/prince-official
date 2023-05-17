@@ -6,7 +6,6 @@ import { Button } from "@mui/material";
 import Switch from "@mui/material/Switch";
 import anime from "animejs";
 function Header() {
-  // debugger
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.mode.mode);
   const handleModeToggle = () => {
@@ -27,33 +26,30 @@ function Header() {
     });
   }, []);
   return (
-    <header className="flex p-5 shadow-md">
+    <header className={`flex p-5 shadow-md ${mode ? "bg-black" : "bg-white"}`}>
       {/* 之後放ICON */}
+      <h1 className="font-bold text-2xl">DEVELOPER</h1>
+      {/* <TbLetterA size={30} color={`${mode ? "white" : "black"}`} /> */}
       <div aria-label="nav" className="flex justify-center w-full">
         <div className="my-nav">
           <Link to="/">
             <Button>HOME</Button>
           </Link>
-          <Link to="/work">
+          {/* <Link to="/work">
             <Button>WORK</Button>
-          </Link>
+          </Link> */}
           <Link to="/experience">
             <Button>EXPERIENCE</Button>
           </Link>
           <Link to="/interest">
             <Button>Interest</Button>
           </Link>
-          {/* MORE在另一種模式才會出現 */}
-          {mode && (
-            <Link to="/more">
-              <Button>MORE</Button>
-            </Link>
-          )}
+          <Link to="/more">
+            <Button>MORE</Button>
+          </Link>
         </div>
       </div>
-      <div>
-        <Switch checked={mode} onChange={handleModeToggle} />
-      </div>
+      {/* <Switch checked={mode} onChange={handleModeToggle} color="default" /> */}
     </header>
   );
 }

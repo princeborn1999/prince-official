@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/prince-official/static/css/main.11aa5285.css",
-    "main.js": "/prince-official/static/js/main.484f50ca.js",
+    "main.css": "/prince-official/static/css/main.2219dad2.css",
+    "main.js": "/prince-official/static/js/main.8456d90f.js",
     "static/js/787.a21709ee.chunk.js": "/prince-official/static/js/787.a21709ee.chunk.js",
+    "static/media/body.webp": "/prince-official/static/media/body.104d28dcb18c609a75e7.webp",
+    "static/media/Computer.jpg": "/prince-official/static/media/Computer.de164660cb7c59030ef3.jpg",
+    "static/media/manga.jpg": "/prince-official/static/media/manga.b24d65fd9dc089b92da1.jpg",
+    "static/media/profile-picture2.jpg": "/prince-official/static/media/profile-picture2.e80841bf80d8b8066c27.jpg",
     "index.html": "/prince-official/index.html",
-    "main.11aa5285.css.map": "/prince-official/static/css/main.11aa5285.css.map",
-    "main.484f50ca.js.map": "/prince-official/static/js/main.484f50ca.js.map",
+    "main.2219dad2.css.map": "/prince-official/static/css/main.2219dad2.css.map",
+    "main.8456d90f.js.map": "/prince-official/static/js/main.8456d90f.js.map",
     "787.a21709ee.chunk.js.map": "/prince-official/static/js/787.a21709ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11aa5285.css",
-    "static/js/main.484f50ca.js"
+    "static/css/main.2219dad2.css",
+    "static/js/main.8456d90f.js"
   ]
 }

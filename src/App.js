@@ -10,8 +10,7 @@ import { Interest } from "./pages/Interest";
 import { More } from "./pages/More";
 import { NotFound } from "./pages/NotFound";
 import { Footer } from "./components/Footer";
-import { Work } from "./pages/Work";
-
+import { Backend } from "./pages/Backend";
 const store = configureStore({
   reducer: rootReducer,
 });
@@ -29,6 +28,7 @@ function App() {
               <Route path="/experience" element={<Experience />} />
               <Route path="/interest" element={<Interest />} />
               <Route path="/more" element={<More />} />
+              <Route path="/backend" element={<Backend />} />
               <Route component={NotFound} />
             </Routes>
           </main>

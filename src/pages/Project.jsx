@@ -13,9 +13,10 @@ export function Project(){
     };
     return(
         <section aria-label="side-project">
-        <div className="flex justify-center text-2xl">
+        <div className="flex justify-center p-5 text-2xl">
           <h2 className="font-bold">Side Project</h2>
         </div>
+        <div className='flex'>
         <Timeline>
           <TimelineItem onClick={() => handleDotClick('mrt')}>
             <TimelineSeparator>
@@ -47,6 +48,10 @@ export function Project(){
             <TimelineContent>2018 Verilog 可愛ICON</TimelineContent>
           </TimelineItem>
         </Timeline>
+        <div>
+          
+        </div>
+        </div>
       </section>
     )
 }

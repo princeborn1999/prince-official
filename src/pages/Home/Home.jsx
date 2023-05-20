@@ -43,6 +43,9 @@ export function Home() {
           </div>
         </div>
       </div>
+      <div aria-label='connect'>
+        
+      </div>
     </div>
     
   );

@@ -1,24 +1,48 @@
-import React from "react";
-import Video from "../../components/Video";
-import Profile from "./Profile";
+import React, { useState } from "react";
+import angularImg from '../../assets/img/icons8-angular-48.png'
+import reactImg from '../../assets/img/icons8-react-100.png'
+import profileImg from '../../assets/img/profile-picture.jpg'
 export function Home() {
+  const [value, setValue] = useState("1");
+  const [ activeTab, setActiveTab] = useState('tab1')
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
-    <div className="grid grid-cols-10">
-      <section id="section-right" className="col-span-8 p-5 pl-10">
-        <div className="text-3xl text-white p-2 rounded-2xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 shadow-md">
-          <div className="flex justify-center p-5">
-            <p>If you don't make changes now,</p>
-            <p>when will you make them?</p>
+    <div className="py-5 px-10 flex justify-center">
+      <div className="rounded-md shadow-sm flex">
+        <img className="h-48" src={profileImg} alt="" />
+        <div aria-label="text" className="px-2">
+          <div className="flex items-center space-x-2 p-2">
+            <p className="text-3xl font-bold">Hi I'm Aaron</p>
+            <p className="text-2xl">, a</p>
+            <p className="underline text-3xl">Front-end developer</p>
+            <p className="text-2xl">passionate about software development.👍</p>
           </div>
-          <Video />
-          <div className="flex justify-center p-5">
-            <p>Success emerges from the lessons of failure</p>
+          <div className="flex items-center space-x-2 p-2">
+            <p className="text-2xl ">With 1 year of experience in</p>
+            <img class="h-16" src={angularImg} alt="" />
+            <p className="text-3xl underline"> Angular </p>
+            <p className="text-2xl "> and </p>
+            <img class="h-16" src={reactImg} alt="" />
+            <p className="text-3xl underline">React.</p>
+          </div>
+          <div className="flex items-center space-x-2 p-2">
+            <p className="text-2xl">
+              This website showcases a collection of my work💪, including side project in College.🏫
+            </p>
+          </div>
+          <div className="flex items-center space-x-2 p-2">
+            <p className="text-2xl">
+              If you have any questions🙋‍♂️, collaboration🤝, please feel
+            </p>
+            <p className="text-3xl font-bold">free</p>
+            <p className="text-2xl">
+              to contact with me.👋
+            </p>
           </div>
         </div>
-      </section>
-      <section id="section-left" className="col-span-2">
-        <Profile />
-      </section>
+      </div>
     </div>
   );
 }

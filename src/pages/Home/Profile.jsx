@@ -6,12 +6,12 @@ import { SiAngular, SiReact, SiNodedotjs } from "react-icons/si";
 import { RxEnvelopeClosed } from "react-icons/rx";
 function Profile() {
   return (
-    <div className="bg-gradient-to-r p-10 border">
-      <img
+    <div className="">
+      {/* <img
         className="rounded-full"
         src={ProfilePicture}
         alt="portfolio_picture"
-      />
+      /> */}
       <h2 className="font-bold">Name</h2>
       <p>Aaron Huang (Aaron Prince)</p>
       <h2 className="font-bold">Title</h2>

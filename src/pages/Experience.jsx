@@ -50,42 +50,7 @@ export function Experience() {
         <p>2022.8~2022.11 DragonSoft as Backend Engineer</p>
         <p>2022.12~Current Systex放url as Frontend Engineer</p>
       </section>
-      <section aria-label="side-project">
-        <div className="flex justify-center text-2xl">
-          <h2 className="font-bold">Side Project</h2>
-        </div>
-        <Timeline position="alternate">
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              Taipei MRT UIUX design 初選 Behance
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>2020 Unity Skill ? git hub link</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>2019 Arduino Skill ? git hub link</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-            </TimelineSeparator>
-            <TimelineContent>2018 Verilog ?</TimelineContent>
-          </TimelineItem>
-        </Timeline>
-      </section>
+     
     </div>
   );
 }

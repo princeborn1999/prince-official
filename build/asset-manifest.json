@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/prince-official/static/css/main.e947544a.css",
-    "main.js": "/prince-official/static/js/main.0d41705c.js",
-    "static/js/787.a21709ee.chunk.js": "/prince-official/static/js/787.a21709ee.chunk.js",
-    "static/media/mrt1.jpg": "/prince-official/static/media/mrt1.68b39ee72f3ea52c1635.jpg",
-    "static/media/mrt3.jpg": "/prince-official/static/media/mrt3.911d926611bacb77ff1d.jpg",
-    "static/media/mrt2.jpg": "/prince-official/static/media/mrt2.38356ebeecc3135174d8.jpg",
-    "static/media/profile-picture.jpg": "/prince-official/static/media/profile-picture.e13eb2c5bee7bb0c501f.jpg",
-    "index.html": "/prince-official/index.html",
-    "main.e947544a.css.map": "/prince-official/static/css/main.e947544a.css.map",
-    "main.0d41705c.js.map": "/prince-official/static/js/main.0d41705c.js.map",
-    "787.a21709ee.chunk.js.map": "/prince-official/static/js/787.a21709ee.chunk.js.map"
+    "main.css": "/static/css/main.e947544a.css",
+    "main.js": "/static/js/main.8d2dc50a.js",
+    "static/js/787.a21709ee.chunk.js": "/static/js/787.a21709ee.chunk.js",
+    "static/media/mrt1.jpg": "/static/media/mrt1.68b39ee72f3ea52c1635.jpg",
+    "static/media/mrt3.jpg": "/static/media/mrt3.911d926611bacb77ff1d.jpg",
+    "static/media/mrt2.jpg": "/static/media/mrt2.38356ebeecc3135174d8.jpg",
+    "static/media/profile-picture.jpg": "/static/media/profile-picture.e13eb2c5bee7bb0c501f.jpg",
+    "index.html": "/index.html",
+    "main.e947544a.css.map": "/static/css/main.e947544a.css.map",
+    "main.8d2dc50a.js.map": "/static/js/main.8d2dc50a.js.map",
+    "787.a21709ee.chunk.js.map": "/static/js/787.a21709ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e947544a.css",
-    "static/js/main.0d41705c.js"
+    "static/js/main.8d2dc50a.js"
   ]
 }

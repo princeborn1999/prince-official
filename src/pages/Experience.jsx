@@ -53,7 +53,7 @@ export function Experience() {
                   {click === 'degree' && <TimelineDot color='primary'/>}
                   {click !== 'degree' && <TimelineDot/>}
                 </TimelineSeparator>
-                <TimelineContent>Bachelor's degree in Computer Science 2022.1</TimelineContent>
+                <TimelineContent>Bachelor's degree in Computer Science 2022.1 👨🏻‍🎓</TimelineContent>
               </TimelineItem>
             </Timeline>
           </div>

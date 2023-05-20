@@ -11,6 +11,7 @@ import { More } from "./pages/More";
 import { NotFound } from "./pages/NotFound";
 import { Footer } from "./components/Footer";
 import { Backend } from "./pages/Backend";
+import { Project } from "./pages/Project";
 const store = configureStore({
   reducer: rootReducer,
 });
@@ -18,23 +19,23 @@ const store = configureStore({
 function App() {
   return (
     <Provider store={store}>
-      <div className="h-screen">
         <Router>
-          <Header></Header>
-          <main>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              {/* <Route path="/work" element={<Work />} /> */}
-              <Route path="/experience" element={<Experience />} />
-              <Route path="/interest" element={<Interest />} />
-              <Route path="/more" element={<More />} />
-              <Route path="/backend" element={<Backend />} />
-              <Route component={NotFound} />
-            </Routes>
-          </main>
-          <Footer></Footer>
-        </Router>
-      </div>
+          <div className="h-screen flex flex-col">
+            <Header></Header>
+            <main className="mb-auto">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/project" element={<Project />} />
+                <Route path="/interest" element={<Interest />} />
+                <Route path="/more" element={<More />} />
+                <Route path="/backend" element={<Backend />} />
+                <Route component={NotFound} />
+              </Routes>
+            </main>
+            <Footer></Footer>
+          </div>
+      </Router>
     </Provider>
   );
 }

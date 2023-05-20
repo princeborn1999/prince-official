@@ -16,8 +16,8 @@ export function Project(){
         <div className="flex justify-center text-2xl">
           <h2 className="font-bold">Side Project</h2>
         </div>
-        <Timeline position="alternate">
-          <TimelineItem>
+        <Timeline>
+          <TimelineItem onClick={() => handleDotClick('mrt')}>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
@@ -26,21 +26,21 @@ export function Project(){
               Taipei MRT UIUX design 初選 Behance
             </TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem onClick={() => handleDotClick('unity')}>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>2020 Unity Skill ? git hub link</TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem onClick={() => handleDotClick('arduino')}>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>2019 Arduino Skill ? git hub link</TimelineContent>
           </TimelineItem>
-          <TimelineItem>
+          <TimelineItem onClick={() => handleDotClick('verilog')}>
             <TimelineSeparator>
               <TimelineDot />
             </TimelineSeparator>

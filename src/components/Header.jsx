@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMode } from "../store/modeActions";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import Switch from "@mui/material/Switch";
 
 import anime from "animejs";
 function Header() {
+  const location = useLocation();
+  const activeClass = 'text-2xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-300'
+  const unactiveClass = 'text-xl text-gray-800 font-bold mx-4 py-2 px-4 border-b-4 border-yellow-500 hover:border-yellow-500'
   const dispatch = useDispatch();
   const mode = useSelector((state) => state.mode.mode);
   const handleModeToggle = () => {
@@ -32,45 +35,25 @@ function Header() {
       </div>
       <nav className="my-nav flex ml-auto" aria-label="nav">
         <Link to="">
-          <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">HOME</button>
+          <button className={location.pathname === '/' ? activeClass : unactiveClass}>HOME</button>
         </Link>
         <Link to="/experience">
-          <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">EXPERIENCE</button>
+          <button className={location.pathname === '/experience' ? activeClass : unactiveClass}>EXPERIENCE</button>
         </Link>
         <Link to="/project">
-          <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">PROJECT</button>
+          <button className={location.pathname === '/project' ? activeClass : unactiveClass}>PROJECT</button>
         </Link>
         {/* <Link to="/interest">
           <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">INTEREST</button>
         </Link> */}
         <a href ="https://github.com/princeborn1999" target="_blank">
-          <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">GITHUB</button>
+          <button className={unactiveClass}>GITHUB</button>
         </a>
         <Link to="/more">
-          <button className="text-xl font-bold mx-4 py-2 px-4 border-b-4 border-yellow-300 hover:border-yellow-500">MORE</button>
+          <button className={location.pathname === '/more' ? activeClass : unactiveClass}>MORE</button>
         </Link>
       </nav>
     </header>
-
-    // <header className={`flex p-5 shadow-md ${mode ? "bg-black" : "bg-white"}`}>
-    //   <h1 className="font-bold text-2xl">DEVELOPER DIARY</h1>
-    //   <div aria-label="nav" className="flex justify-center w-full">
-    //     <div className="my-nav">
-    //       <Link to="/">
-    //         <Button>HOME</Button>
-    //       </Link>
-    //       <Link to="/experience">
-    //         <Button>EXPERIENCE</Button>
-    //       </Link>
-    //       <Link to="/interest">
-    //         <Button>Interest</Button>
-    //       </Link>
-    //       <Link to="/more">
-    //         <Button>MORE</Button>
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </header>
   );
 }
 

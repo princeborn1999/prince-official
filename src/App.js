@@ -19,7 +19,7 @@ const store = configureStore({
 function App() {
   return (
     <Provider store={store}>
-        <Router basename='/prince-official'>
+        <Router basename='/prince-official/'>
           <div className="h-screen flex flex-col">
             <Header></Header>
             <main className="mb-auto">

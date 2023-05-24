@@ -14,7 +14,10 @@ export function Home() {
     <div className="py-5 px-10 flex justify-center items-center h-96">
       <div>
         <div className="flex mt-32">
-          <img className="h-56" src={profileImg} alt="" />
+          <div>
+              <img className="h-56" src={profileImg} alt="profileImg" />
+              <p>Computer Science Bachelor's Degree from National Chi Nan University</p>
+          </div>
           <div aria-label="text" className="px-2">
             <div className="flex items-center space-x-2 p-2">
               <p className="text-3xl font-bold">Hi I'm Aaron</p>

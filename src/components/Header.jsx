@@ -30,10 +30,10 @@ function Header() {
   }, []);
   return (
     <header className="shadow-lg flex p-5">
-      <div className="flex justify-center py-2" aria-label="title">
+      <div className="flex justify-center py-2" aria-label="title" >
         <h1 className="font-bold text-xl">DEVELOPER DIARY</h1>
       </div>
-      <nav className="my-nav flex ml-auto" aria-label="nav">
+      <nav className="my-nav flex ml-auto " aria-label="nav" >
         <Link to="">
           <button className={location.pathname === '/' ? activeClass : unactiveClass}>HOME</button>
         </Link>
